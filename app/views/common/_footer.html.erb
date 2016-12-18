@@ -4,11 +4,3 @@
         <a href="http://courses.growthschool.com/courses/rails-101/" target=_new>xdite</a>
     </p>
 </footer>
-<% if flash.any? %>
-  <% user_facing_flashes.each do |key, value| %>
-    <div class="alert alert-dismissable alert-<%= flash_class(key) %>">
-      <button class="close" data-dismiss="alert">×</button>
-      <%= value %>
-    </div>
-  <% end %>
-<% end %>
